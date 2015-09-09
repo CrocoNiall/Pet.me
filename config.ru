@@ -3,7 +3,7 @@ require 'bundler'
 Bundler.require
 
 # Controllers
-require './models/artist'
+require './models/animal'
 require './app'
 
-run Tunr
+run Animals
