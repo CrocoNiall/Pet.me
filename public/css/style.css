@@ -17,8 +17,11 @@ a {
 }
 
 header {
-  width: 100%;
+  width: 50%;
+  height: 150px;
   background: black;
+  margin: 0 auto;
+  border: solid black 5px;
 }
 
 header nav { 
@@ -53,12 +56,21 @@ header nav ul li a {
   text-decoration: none;
 }
 
+header, main, footer{
+  padding: 5px;
+}
+
 main, footer {
   max-width: 960px;
   margin: 40px auto;
+  width: 50%;
+  margin: 0 auto;
+}
+main {
+  border: solid black 5px;
 }
 
-main .artists {
+main .animals {
   margin: 20px 0;
 }
 
@@ -67,7 +79,7 @@ main ul {
   padding: 0;
 }
 
-.artists .row {
+.animals .row {
   height: 100px;
 }
 
@@ -75,7 +87,7 @@ main ul {
   height: 30px;
 }
 
-.artists .row, 
+.animals .row, 
 .songs .row {
   clear: both;
   background: #fff;
@@ -83,18 +95,18 @@ main ul {
   margin: 0 0 10px;
 }
 
-.artists .row img {
+.animals .row img {
   float: left;
   max-height: 100px;
 }
 
-.artists .row ul {
+.animals .row ul {
   float: left;
   margin: 0 0 0 10px;
 }
 
-.artists .row h2, 
-.artists .row h2 a {
+.animals .row h2, 
+.animals .row h2 a {
   font-size: 20px;
   margin: 0 0 10px;
   text-decoration: none;
@@ -102,8 +114,8 @@ main ul {
 
 .songs .row ul li a,
 .songs .row ul li button {
-.artists .row ul li a,
-.artists .row ul li button {
+.animals .row ul li a,
+.animals .row ul li button {
   color: black;
   background:none!important;
   border:none; 
@@ -120,6 +132,7 @@ input, select {
   margin: 0 0 10px;
 }
 
+
 input[type=submit], 
 .btn {
   background: #d8e1e5;
@@ -132,4 +145,10 @@ input[type=submit],
   text-decoration: none;
   display: block;
   margin-bottom: 20px;
+}
+
+img#animal {
+  
+  width: 500px;
+
 }

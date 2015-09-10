@@ -1,27 +1,27 @@
-<h2>Artists</h2>
+<h2>Animals</h2>
 
-<a class="btn" href="/artists/new">Add Artist</a>
+<a class="btn" href="/animal/new">Add Animal</a>
 
-<div class="artists">
+<div class="animals">
   <% @animals.each do |animal| %>
   <div class="row">
-    <img src="<%= animal.photo_url %>" alt="<%= animal.name %> photo">
+    <img class='animal' src="<%= animal.photo_url %>" alt="<%= animal.name %> photo">
     <ul>
       <li>
         <h2>
-          <a href="/artists/<%= artist.id %>">
-            <%= artist.name %>
+          <a href="/animals/<%= animal.id %>">
+            I am a <%= animal.name %>
           </a>
         </h2>
       </li>
       <li>
-        <a href="/artists/<%= artist.id %>/edit">
+        <a href="/animal/<%= animal.id %>/edit">
           Edit
         </a>
       </li>
       <li>
         <li>
-          <form method="/artists/<%= artist.id %>/delete" action="post">
+          <form action="/animals/<%= animal.id %>/delete" method="post">
             <button>Delete</button>
           </form>
         </li>

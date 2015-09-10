@@ -1,14 +1,14 @@
-<h2>Edit Artist</h2>
+<h2>Edit Animal</h2>
 
-<form action='/artists/<%= "#{@artist.id}" %>' method="post">
-  <label for="artist[name]">Name:</label>
-  <input name="artist[name]" value='<%= "#{@artist.name}" %>'>
+<form action='/animals/<%= "#{@animal.id}" %>' method="post">
+  <label for="animal[name]">Name:</label>
+  <input name="animal[name]" value='<%= "#{@animal.name}" %>'>
 
-  <label for="artist[photo_url]">Photo URL:</label>
-  <input name="artist[photo_url]" value='<%= "#{@artist.photo_url}" %>'>
+  <label for="animal[photo_url]">Photo URL:</label>
+  <input name="animal[photo_url]" value='<%= "#{@animal.photo_url}" %>'>
 
-  <label for="artist[nationality]">Nationality:</label>
-  <input name="artist[nationality]" value='<%= "#{@artist.nationality}" %>'>
+  <label for="animal[eats]">Nationality:</label>
+  <input name="animal[eats]" value='<%= "#{@animal.eats}" %>'>
 
   <input type="submit" value="Create">
 </form>
